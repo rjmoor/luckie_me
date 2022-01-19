@@ -43,7 +43,8 @@
     font-family: Roboto, sans-serif;
     font-size: 10px;
     line-height: 14px;
-    font-weight: 700;
+    font-style: normal;
+    font-weight: 400;
   }
 
   .header-top-links {
@@ -54,21 +55,174 @@
     padding-bottom: 10px;
   }
 
-  .div-block {
-    display: -ms-grid;
-    display: grid;
+  .header-bottom-links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     grid-auto-columns: 1fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: minmax(auto, 1fr) auto;
+    grid-template-rows: minmax(auto, 1fr) auto;
+  }
+
+  .signup-button {
+    max-width: 60%;
+    margin-top: 0px;
+    margin-left: 60px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #fff;
+    border-radius: 20px;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .header-button-signup {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 0px;
+    margin-right: 0px;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 0.5fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr;
     -ms-grid-rows: auto;
     grid-template-rows: auto;
   }
 
-  .text-block {
+  .div-block {
+    width: 40px;
+    height: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    background-color: #fff;
+    text-align: left;
+  }
+
+  .div-block-2 {
+    display: block;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    color: #fff;
+    line-height: 35px;
+  }
+
+  .image {
+    display: block;
+    width: auto;
+    max-width: 40%;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
+  .div-block-3 {
+    margin-top: 0px;
+  }
+
+  .div-block-4 {
+    background-color: #000;
+  }
+
+  .hero-text-top {
+    position: absolute;
+    left: 0%;
+    top: 250px;
+    right: 0%;
+    bottom: auto;
+    z-index: 0;
+    display: block;
     font-family: Roboto, sans-serif;
     color: #fff;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-column-count: auto;
+    column-count: auto;
+  }
+
+  .hero-text-large {
+    font-family: Roboto, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .hero-text-bottom {
+    position: relative;
+    left: 120px;
+    top: 155px;
+    color: #999930;
+  }
+
+  .div-block-5 {
+    overflow: visible;
+    height: 275px;
+    min-height: auto;
+    background-image: url('../images/heroImage_0.0_m.jpg');
+    background-size: auto;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
+  .bold-text {
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #w-node-_0098ceec-8f39-8dbc-c350-5b8ec4ba9b8a-d2bd9f7a {
+    -ms-grid-column-align: stretch;
+    justify-self: stretch;
+    -ms-grid-row-align: end;
+    align-self: end;
+    -ms-grid-column: span 2;
+    grid-column-start: span 2;
+    -ms-grid-column-span: 2;
+    grid-column-end: span 2;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
   }
 }
 
